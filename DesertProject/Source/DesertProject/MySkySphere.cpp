@@ -2,6 +2,7 @@
 
 
 #include "MySkySphere.h"
+#include "Engine/StaticMeshActor.h"
 #include "Engine/DirectionalLight.h"
 
 // Sets default values
@@ -18,10 +19,7 @@ void AMySkySphere::BeginPlay()
 {
 	Super::BeginPlay();
 
-	if(SunLight.IsValid())
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Test Message"));
-	else
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Test Message"));
+	
 	
 	
 }
