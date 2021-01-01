@@ -38,8 +38,9 @@ public class WeaponModule : ModuleRules
 			{
 				"Core",
 				"CoreUObject",
-				"Engine"
-			}
+				"Engine",
+                "AssetLoaderModule"
+            }
 			);
 		
 		
