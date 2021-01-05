@@ -17,6 +17,12 @@ void AWeaponBase::BeginPlay()
 	Super::BeginPlay();
 	
 }
+void AWeaponBase::PostInitializeComponents()
+{
+	Super::PostInitializeComponents();
+
+
+}
 
 // Called every frame
 void AWeaponBase::Tick(float DeltaTime)
