@@ -18,6 +18,12 @@ void APlayerCharacter::BeginPlay()
 	
 }
 
+void APlayerCharacter::PostInitializeComponents()
+{
+	Super::PostInitializeComponents();
+
+}
+
 // Called every frame
 void APlayerCharacter::Tick(float DeltaTime)
 {
@@ -30,9 +36,41 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &APlayerCharacter::MoveForward);
+	PlayerInputComponent->BindAxis(TEXT("MoveLeft"), this, &APlayerCharacter::MoveLeft);
+	PlayerInputComponent->BindAxis(TEXT("LookHorizontal"), this, &APlayerCharacter::LookHorizontal);
+	PlayerInputComponent->BindAxis(TEXT("LookVertical"), this, &APlayerCharacter::LookVertical);
+}
+
+void APlayerCharacter::initComponents()
+{
+	MainCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("MAINCAMERA"));
+
+	MainCamera->AttachTo(RootComponent);
 }
 
 void APlayerCharacter::loadAsset()
 {
+
+}
+
+void APlayerCharacter::MoveForward(float NewAxisValue)
+{
+	AddMovementInput(FRotationMatrix(FRotator(0.0f, GetControlRotation().Yaw, 0.0f)).GetUnitAxis(EAxis::X), NewAxisValue);
+}
+
+void APlayerCharacter::MoveLeft(float NewAxisValue)
+{
+	AddMovementInput(FRotationMatrix(FRotator(0.0f, GetControlRotation().Yaw, 0.0f)).GetUnitAxis(EAxis::Y), NewAxisValue);
+}
+
+void APlayerCharacter::LookHorizontal(float NewAxisValue)
+{
+	AddControllerYawInput(NewAxisValue);
+}
+
+void APlayerCharacter::LookVertical(float NewAxisValue)
+{
+	AddControllerPitchInput(NewAxisValue);
 }
 

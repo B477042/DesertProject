@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Components/StaticMeshComponent.h"
+#include "Camera/CameraComponent.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
@@ -19,19 +20,27 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
+	virtual void PostInitializeComponents()override;
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	
+
 
 protected:
+	void initComponents();
 	void loadAsset();
-	
+	void MoveForward(float NewAxisValue);
+	void MoveLeft(float NewAxisValue);
+	void LookHorizontal(float NewAxisValue);
+	void LookVertical(float NewAxisValue);
+
 
 protected:
-	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+		UCameraComponent* MainCamera;
 
 };

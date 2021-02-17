@@ -3,10 +3,19 @@
 
 #include "ProjectileBase.h"
 
-void FProjectileInfo::SetInfo()
+
+AProjectileBase::AProjectileBase()
 {
+	MovementComponent = CreateDefaultSubobject<UMyProjectileMovementComponent>(TEXT("MovementComponent"));
+	RootScene = CreateDefaultSubobject<USceneComponent>(TEXT("RootScene"));
+	RootComponent=RootScene;
+
 
 }
+
+
+
+
 
 
 // Sets default values

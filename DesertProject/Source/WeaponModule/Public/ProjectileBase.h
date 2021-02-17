@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "MyProjectileMovementComponent.h"
 #include "ProjectileBase.generated.h"
 
 
@@ -14,7 +15,10 @@ struct FProjectileInfo
 
 public:
 	//Set Information of this Bullet
-	void SetInfo();
+	void SetInfo()
+	{
+
+	}
 
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
@@ -44,7 +48,10 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-
+protected:
+	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+		UMyProjectileMovementComponent* MovementComponent;
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		USceneComponent* RootScene;
 
 };
