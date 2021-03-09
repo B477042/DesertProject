@@ -19,7 +19,10 @@ void AMySkySphere::BeginPlay()
 {
 	Super::BeginPlay();
 
-	
+	if (SunLight.IsValid())
+	{
+		SunLight->SetMobility(EComponentMobility::Movable);
+	}
 	
 	
 }

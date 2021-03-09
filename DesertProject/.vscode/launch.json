@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "DesertProject (Debug)",
+			"request": "launch",
+			"preLaunchTask": "DesertProject Win64 Debug Build",
+			"program": "I:\\CODE\\DesertProject\\DesertProject\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "DesertProject (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "DesertProject Win64 DebugGame Build",
+			"program": "I:\\CODE\\DesertProject\\DesertProject\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "DesertProject (Development)",
+			"request": "launch",
+			"preLaunchTask": "DesertProject Win64 Development Build",
+			"program": "I:\\CODE\\DesertProject\\DesertProject\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "DesertProject (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "DesertProject Win64 Shipping Build",
+			"program": "I:\\CODE\\DesertProject\\DesertProject\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "DesertProject (Test)",
+			"request": "launch",
+			"preLaunchTask": "DesertProject Win64 Test Build",
+			"program": "I:\\CODE\\DesertProject\\DesertProject\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "DesertProjectEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "DesertProjectEditor Win64 Debug Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"I:\\CODE\\DesertProject\\DesertProject\\DesertProject.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "DesertProjectEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "DesertProjectEditor Win64 DebugGame Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"I:\\CODE\\DesertProject\\DesertProject\\DesertProject.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "DesertProjectEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "DesertProjectEditor Win64 Development Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"I:\\CODE\\DesertProject\\DesertProject\\DesertProject.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"I:\\CODE\\DesertProject\\DesertProject\\DesertProject.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.26"
+		}
+	]
+}

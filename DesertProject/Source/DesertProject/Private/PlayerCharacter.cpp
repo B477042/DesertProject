@@ -2,6 +2,7 @@
 
 
 #include "PlayerCharacter.h"
+#include "Engine/EngineTypes.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -45,8 +46,8 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 void APlayerCharacter::initComponents()
 {
 	MainCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("MAINCAMERA"));
-
-	MainCamera->AttachTo(RootComponent);
+	//FAttachmentTransformRules AttachmentTransforRules = FAttachmentTransformRules::SnapToTargetNotIncludingScale;
+	MainCamera->AttachToComponent(RootComponent, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
 }
 
 void APlayerCharacter::loadAsset()

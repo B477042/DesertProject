@@ -11,6 +11,9 @@
 /**
  * Class for Asynchronous Load
  */
+
+
+
 UCLASS(config=AssetLoader)
 class ASSETLOADERMODULE_API UAssetLoader : public UObject
 {

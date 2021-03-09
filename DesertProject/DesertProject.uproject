@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.25",
+	"EngineAssociation": "4.26",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -10,7 +10,8 @@
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
 				"Engine",
-				"CoreUObject"
+				"CoreUObject",
+				"AIModule"
 			]
 		},
 		{
@@ -39,7 +40,7 @@
 		},
 		{
 			"Name": "Restart",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/1bf89025ddf246e3af3c196d0426e0d3"
 		},
 		{
@@ -54,7 +55,7 @@
 		},
 		{
 			"Name": "ShaderReader",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/7784305aa33a4411b44c5b207ea88f67"
 		},
 		{
@@ -65,6 +66,11 @@
 		{
 			"Name": "ModelingToolsEditorMode",
 			"Enabled": true
+		},
+		{
+			"Name": "GameplayHelper",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/0d8f0ca5fdee4d7fae6f913a3d1e740b"
 		}
 	]
 }

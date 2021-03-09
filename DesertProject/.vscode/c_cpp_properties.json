@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "DesertProjectEditor Editor Win64 Development (DesertProject)",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_DesertProject.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

@@ -2,14 +2,20 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "GameCharacter.h"
 #include "GameFramework/Character.h"
-#include "Components/StaticMeshComponent.h"
-#include "Camera/CameraComponent.h"
+
 #include "PlayerCharacter.generated.h"
 
+
+/*
+	* A Character which player will controll
+	* Receive Key & Mouse Input
+	* Components List : 
+*/
+
 UCLASS()
-class DESERTPROJECT_API APlayerCharacter : public ACharacter
+class DESERTPROJECT_API APlayerCharacter : public AGameCharacter
 {
 	GENERATED_BODY()
 
