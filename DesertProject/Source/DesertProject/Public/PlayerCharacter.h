@@ -43,7 +43,9 @@ protected:
 	void MoveLeft(float NewAxisValue);
 	void LookHorizontal(float NewAxisValue);
 	void LookVertical(float NewAxisValue);
-
+	//Shoot the gun or Melee Attack
+	void PullTheTrigger();
+	void AimDownSight();
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))

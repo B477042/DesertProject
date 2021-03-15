@@ -3,6 +3,7 @@
 
 #include "PlayerCharacter.h"
 #include "Engine/EngineTypes.h"
+#include "..\Public\PlayerCharacter.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -41,6 +42,11 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAxis(TEXT("MoveLeft"), this, &APlayerCharacter::MoveLeft);
 	PlayerInputComponent->BindAxis(TEXT("LookHorizontal"), this, &APlayerCharacter::LookHorizontal);
 	PlayerInputComponent->BindAxis(TEXT("LookVertical"), this, &APlayerCharacter::LookVertical);
+
+
+	PlayerInputComponent->BindAction(TEXT("PullTheTrigger"), EInputEvent::IE_Pressed, this, &APlayerCharacter::PullTheTrigger);
+	//PlayerInputComponent->BindAction(TEXT("PullTheTrigger"), EInputEvent::IE_, this, &APlayerCharacter::PullTheTrigger);
+	PlayerInputComponent->BindAction(TEXT("AimDownSight"), EInputEvent::IE_Pressed, this, &APlayerCharacter::AimDownSight);
 }
 
 void APlayerCharacter::initComponents()
@@ -73,5 +79,15 @@ void APlayerCharacter::LookHorizontal(float NewAxisValue)
 void APlayerCharacter::LookVertical(float NewAxisValue)
 {
 	AddControllerPitchInput(NewAxisValue);
+}
+
+void APlayerCharacter::PullTheTrigger()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Fire"));
+}
+
+void APlayerCharacter::AimDownSight()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Sight"));
 }
 
