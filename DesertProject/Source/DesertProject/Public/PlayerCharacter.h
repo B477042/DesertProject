@@ -44,11 +44,18 @@ protected:
 	void LookHorizontal(float NewAxisValue);
 	void LookVertical(float NewAxisValue);
 	//Shoot the gun or Melee Attack
-	void PullTheTrigger();
+	void PullTrigger();
+	void ReleaseTrigger();
 	void AimDownSight();
+	
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 		UCameraComponent* MainCamera;
+
+	UPROPERTY(VisibleAnywhere, Category = "Attack")
+	uint8 bAutoFireMode;
+
+
 
 };

@@ -78,5 +78,9 @@ protected:
 	//Default Value : 100.0f
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Stats")
 		float HP;
+	//The WeakObejctPtr arrangement of the Weapons the character has.
+	/*UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Weapons", meta = (AllowPrivateAccess = "true"))
+	TArray<TWeakObjectPtr<class AWeaponBase>>Weapons;*/
+
 
 };

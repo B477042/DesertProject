@@ -11,6 +11,8 @@ APlayerCharacter::APlayerCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	loadAsset();
+	bAutoFireMode = false;
+	
 }
 
 // Called when the game starts or when spawned
@@ -31,6 +33,10 @@ void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	/*if (bAutoFireMode)
+		UE_LOG(LogTemp, Warning, TEXT("Auto Fire"));*/
+
+
 }
 
 // Called to bind functionality to input
@@ -44,7 +50,8 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAxis(TEXT("LookVertical"), this, &APlayerCharacter::LookVertical);
 
 
-	PlayerInputComponent->BindAction(TEXT("PullTheTrigger"), EInputEvent::IE_Pressed, this, &APlayerCharacter::PullTheTrigger);
+	PlayerInputComponent->BindAction(TEXT("PullTheTrigger"), EInputEvent::IE_Pressed, this, &APlayerCharacter::PullTrigger);
+	PlayerInputComponent->BindAction(TEXT("PullTheTrigger"), EInputEvent::IE_Released, this, &APlayerCharacter::ReleaseTrigger);
 	//PlayerInputComponent->BindAction(TEXT("PullTheTrigger"), EInputEvent::IE_, this, &APlayerCharacter::PullTheTrigger);
 	PlayerInputComponent->BindAction(TEXT("AimDownSight"), EInputEvent::IE_Pressed, this, &APlayerCharacter::AimDownSight);
 }
@@ -81,13 +88,18 @@ void APlayerCharacter::LookVertical(float NewAxisValue)
 	AddControllerPitchInput(NewAxisValue);
 }
 
-void APlayerCharacter::PullTheTrigger()
+void APlayerCharacter::PullTrigger()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Fire"));
+	//(bAutoFireMode) ? bAutoFireMode = false : bAutoFireMode = true;
 }
-
+void APlayerCharacter::ReleaseTrigger()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Release"));
+}
 void APlayerCharacter::AimDownSight()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Sight"));
+	
 }
 
