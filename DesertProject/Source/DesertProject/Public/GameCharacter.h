@@ -7,8 +7,9 @@
 #include "Components/StaticMeshComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
-
+#include "GameFramework/PawnMovementComponent.h"
 #include "GameProgressSave.h"
+
 
 #include "GameCharacter.generated.h"
 

@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/BoxComponent.h"
+//#include ""
 #include "WeaponBase.generated.h"
 
 UCLASS()
@@ -24,10 +27,31 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	void PickedBy(AActor* OtherActor);
+
+	void DropWeapon();
+
+
+
+	
+
+
+	/*virtual void SaveGame(class UGameProgressSave* SaveInstance);
+	virtual void LoadGame(class UGameProgressSave* LoadInstance);*/
+
+
+
 protected:
 	//Actor which owning this Weapon
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Info", meta = (AllowPrivateAccess = "true", DisplayName = "OwnerActor"))
+	//UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Info", meta = (AllowPrivateAccess = "true", DisplayName = "Owner Actor"))
 		TSoftObjectPtr<AActor> OwnerActor;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Mesh", meta = (AllowPrivateAccess = "true", DisplayName = "Mesh Component"))
+		UStaticMeshComponent* MeshComponent;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Mesh", meta = (AllowPrivateAccess = "true", DisplayName = "Box Trigger"))
+		UBoxComponent* BoxTrigger;
 
 
+
+
+	
 };

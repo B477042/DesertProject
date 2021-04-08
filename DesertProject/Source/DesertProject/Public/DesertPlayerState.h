@@ -13,5 +13,6 @@ UCLASS()
 class DESERTPROJECT_API ADesertPlayerState : public APlayerState
 {
 	GENERATED_BODY()
-	
+public:
+
 };
