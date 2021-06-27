@@ -117,7 +117,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=\"I:\\CODE\\DesertProject\\DesertProject\\DesertProject.uproject\"",
+				"-project=I:\\CODE\\DesertProject\\DesertProject\\DesertProject.uproject",
 				"-game",
 				"-engine"
 			],

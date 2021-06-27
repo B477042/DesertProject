@@ -19,9 +19,10 @@
 			"Name": "WeaponModule",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
+      "AdditionalDependencies": [
+        "Engine",
+        "CoreUObject"
+      ]
 		},
 		{
 			"Name": "AssetLoaderModule",

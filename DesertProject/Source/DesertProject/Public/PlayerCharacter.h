@@ -47,7 +47,7 @@ protected:
 	void PullTrigger();
 	void ReleaseTrigger();
 	void AimDownSight();
-	
+	void Jump();
 
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))

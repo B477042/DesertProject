@@ -23,7 +23,6 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	virtual void PostInitializeComponents() override;
-
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -41,4 +40,8 @@ protected:
 		uint8  n_attachemts;
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Info", meta = (AllowPrivateAccess = true))
 		class UGunStateComponent* GunStateComponent;
+
+		
+
+	
 };

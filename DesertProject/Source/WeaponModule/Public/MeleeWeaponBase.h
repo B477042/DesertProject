@@ -13,5 +13,8 @@ UCLASS()
 class WEAPONMODULE_API AMeleeWeaponBase : public AWeaponBase
 {
 	GENERATED_BODY()
-	
+
+
+
+
 };

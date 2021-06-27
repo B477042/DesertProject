@@ -26,16 +26,7 @@
 
 DECLARE_MULTICAST_DELEGATE_OneParam(FOnHPChanged, float);
 
-//UINTERFACE()
-//class UTemprateInterface : public UInterface
-//{
-//	GENERATED_BODY()
-//};
-//
-//class ITemprateInterface
-//{
-//	GENERATED_BODY()
-//};
+
 
 
 

@@ -1,0 +1,317 @@
+[
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\AssetLoaderModule\\\\AssetLoaderModule.Build.cs",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\AssetLoaderModule.199.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\AssetLoaderModule\\\\Private\\\\AssetLoader.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\AssetLoaderModule.199.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\AssetLoaderModule\\\\Private\\\\AssetLoaderModule.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\AssetLoaderModule.199.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\AssetLoaderModule\\\\Private\\\\Logging.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\AssetLoaderModule.199.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\AssetLoaderModule\\\\Private\\\\Logging.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\AssetLoaderModule.199.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\AssetLoaderModule\\\\Public\\\\AssetLoader.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\AssetLoaderModule.199.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\AssetLoaderModule\\\\Public\\\\AssetLoaderModule.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\AssetLoaderModule.199.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\DesertProject.Build.cs",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\BasicCharacterAnimInstance.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\DesertGameInstance.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\DesertGameMode.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\DesertGameState.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\DesertPlayerState.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\DesertProject.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\DesertProjectGameModeBase.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\FPSPlayerController.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\GameCharacter.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\GameOptionsData.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\GameProgressSave.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\MissionManager.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\MyPostProcessVolume.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\MySkySphere.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\NPCAIController.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\NPCCharacter.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\PlayerCharacter.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Private\\\\Widget_PlayerHUD.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\BasicCharacterAnimInstance.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\DesertGameInstance.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\DesertGameMode.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\DesertGameState.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\DesertPlayerState.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\DesertProject.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\DesertProjectGameModeBase.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\FPSPlayerController.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\GameCharacter.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\GameOptionsData.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\GameProgressSave.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\MissionManager.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\MyPostProcessVolume.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\MySkySphere.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\NPCAIController.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\NPCCharacter.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\PlayerCharacter.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\DesertProject\\\\Public\\\\Widget_PlayerHUD.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\DesertProject.197.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Private\\\\GunAnimInstance.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Private\\\\GunsBase.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Private\\\\GunStateComponent.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Private\\\\Logging.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Private\\\\Logging.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Private\\\\MeleeWeaponBase.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Private\\\\MyProjectileMovementComponent.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Private\\\\ProjectileBase.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Private\\\\WeaponBase.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Private\\\\WeaponModule.cpp",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Public\\\\GunAnimInstance.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Public\\\\GunsBase.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Public\\\\GunStateComponent.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Public\\\\MeleeWeaponBase.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Public\\\\MyProjectileMovementComponent.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Public\\\\ProjectileBase.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Public\\\\WeaponBase.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\Public\\\\WeaponModule.h",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "I:\\\\CODE\\\\DesertProject\\\\DesertProject\\\\Source\\\\WeaponModule\\\\WeaponModule.Build.cs",
+		"command": "cl.exe @\"I:\\CODE\\DesertProject\\DesertProject\\.vscode\\compileCommands_Default\\WeaponModule.198.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	}
+]
