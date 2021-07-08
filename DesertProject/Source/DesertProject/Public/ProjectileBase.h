@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "MyProjectileMovementComponent.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 #include "ProjectileBase.generated.h"
 
 
@@ -33,7 +33,7 @@ private:
 };
 
 UCLASS()
-class WEAPONMODULE_API AProjectileBase : public AActor
+class DESERTPROJECT_API AProjectileBase : public AActor
 {
 	GENERATED_BODY()
 	
@@ -50,7 +50,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 protected:
 	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-		UMyProjectileMovementComponent* MovementComponent;
+		UProjectileMovementComponent* MovementComponent;
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 		USceneComponent* RootScene;
 

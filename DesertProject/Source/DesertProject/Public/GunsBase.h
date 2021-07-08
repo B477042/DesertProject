@@ -15,7 +15,7 @@
 
 
 UCLASS()
-class WEAPONMODULE_API AGunsBase : public AWeaponBase
+class DESERTPROJECT_API AGunsBase : public AWeaponBase
 {
 	GENERATED_BODY()
 public:

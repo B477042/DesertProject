@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class WEAPONMODULE_API AMeleeWeaponBase : public AWeaponBase
+class DESERTPROJECT_API AMeleeWeaponBase : public AWeaponBase
 {
 	GENERATED_BODY()
 

@@ -15,15 +15,7 @@
 				"UMG"
 			]
 		},
-		{
-			"Name": "WeaponModule",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-      "AdditionalDependencies": [
-        "Engine",
-        "CoreUObject"
-      ]
-		},
+		 
 		{
 			"Name": "AssetLoaderModule",
 			"Type": "Runtime",

@@ -2,6 +2,7 @@
 
 
 #include "GunsBase.h"
+#include "Engine/AssetManager.h"
 
 AGunsBase::AGunsBase()
 {
@@ -30,7 +31,6 @@ void AGunsBase::Fire()
 {
 	//If SaftyMode return
 	if (GunStateComponent->IsSetSafty())return;
-
 
 
 }

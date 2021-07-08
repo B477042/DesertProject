@@ -10,7 +10,7 @@
 #include "WeaponBase.generated.h"
 
 UCLASS()
-class WEAPONMODULE_API AWeaponBase : public AActor
+class DESERTPROJECT_API AWeaponBase : public AActor
 {
 	GENERATED_BODY()
 	

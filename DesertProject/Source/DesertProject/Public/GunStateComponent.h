@@ -21,7 +21,7 @@ enum class FFireMode : uint8
 };
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class WEAPONMODULE_API UGunStateComponent : public UActorComponent
+class DESERTPROJECT_API UGunStateComponent : public UActorComponent
 {
 	GENERATED_BODY()
 

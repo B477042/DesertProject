@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class WEAPONMODULE_API UGunAnimInstance : public UAnimInstance
+class DESERTPROJECT_API UGunAnimInstance : public UAnimInstance
 {
 	GENERATED_BODY()
 public:
