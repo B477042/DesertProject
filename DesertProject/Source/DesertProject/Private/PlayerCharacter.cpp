@@ -67,7 +67,21 @@ void APlayerCharacter::initComponents()
 
 void APlayerCharacter::loadAsset()
 {
+	/*
+	 *	Skeletal Mesh
+	 *	
+	 */
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh>SM_Arm(TEXT("SkeletalMesh'/Game/M4A4_Animated/Arms/Mesh/Mesh_Arms.Mesh_Arms'"));
+	if(SM_Arm.Succeeded())
+	{
+		GetMesh()->SetSkeletalMesh(SM_Arm.Object);
+		GetMesh()->SetRelativeLocation(FVector(0, 0, -90.0f));
+		GetMesh()->SetRelativeRotation(FRotator(0, -90.0f, 0));
+		
+	}
 
+
+	
 }
 
 void APlayerCharacter::MoveForward(float NewAxisValue)

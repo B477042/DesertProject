@@ -31,17 +31,29 @@ public:
 
 
 protected:
-	//Attachments of this Weapon
-	/*UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Attachment", meta = (AllowPrivateAccess = true))
-		TArray<TWeakObjectPtr<AActor>> Attahments;*/
+	//Skeletal Socket Names
+	const FName Name_Muzzle = "Muzzle";
+	const FName Name_ScopeSocket = "ScopeSocket";
+	const FName Name_BulletEject = "ShellEjectionSocket";
 
 	//Maximum number of attachments
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Attachment", meta = (AllowPrivateAccess = true))
-		uint8  n_attachemts;
-	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Info", meta = (AllowPrivateAccess = true))
-		class UGunStateComponent* GunStateComponent;
-
-		
-
+		uint8  Max_Attachemts;
 	
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Info", meta = (AllowPrivateAccess = true))
+		UGunStateComponent* GunStateComponent;
+	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Montage", meta = (AllowPrivateAccess = true))
+		UAnimMontage* Montage_Fire;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Montage", meta = (AllowPrivateAccess = true))
+		UAnimMontage* Montage_Reload;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Montage", meta = (AllowPrivateAccess = true))
+		UAnimMontage* Montage_Melee;
+
+	//Muzzle Flash
+	UPROPERTY(VisibleInstanceOnly, Category = "Particle System")
+		UParticleSystemComponent* PS_Muzzle;
+	//Bullet Ejcet Effect
+	UPROPERTY(VisibleInstanceOnly, Category = "Particle System")
+		UParticleSystemComponent* PS_Eject;
 };

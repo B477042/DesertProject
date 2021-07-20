@@ -3,14 +3,19 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
-#include "Components/StaticMeshComponent.h"
-#include "Components/BoxComponent.h"
+
+#include "GameFramework/Character.h"
+
 //#include ""
 #include "WeaponBase.generated.h"
 
+
+/*
+ *	Don't Use Capsule Component. Instead of that use Mesh's Collision
+ * 
+ */
 UCLASS()
-class DESERTPROJECT_API AWeaponBase : public AActor
+class DESERTPROJECT_API AWeaponBase : public ACharacter
 {
 	GENERATED_BODY()
 	
@@ -36,19 +41,13 @@ public:
 	
 
 
-	/*virtual void SaveGame(class UGameProgressSave* SaveInstance);
-	virtual void LoadGame(class UGameProgressSave* LoadInstance);*/
-
 
 
 protected:
 	//Actor which owning this Weapon
 	//UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Info", meta = (AllowPrivateAccess = "true", DisplayName = "Owner Actor"))
-		TSoftObjectPtr<AActor> OwnerActor;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Mesh", meta = (AllowPrivateAccess = "true", DisplayName = "Mesh Component"))
-		UStaticMeshComponent* MeshComponent;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Mesh", meta = (AllowPrivateAccess = "true", DisplayName = "Box Trigger"))
-		UBoxComponent* BoxTrigger;
+		TSoftObjectPtr<ACharacter> OwnerCharactor;
+	
 
 
 

@@ -2,6 +2,7 @@
 
 
 #include "WeaponBase.h"
+#include "Components/CapsuleComponent.h"
 //#include ""
 
 // Sets default values
@@ -11,12 +12,7 @@ AWeaponBase::AWeaponBase()
 	PrimaryActorTick.bCanEverTick = false;
 	
 
-	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MESHCOMPONENT"));
-	BoxTrigger = CreateDefaultSubobject<UBoxComponent>(TEXT("BOXTRIGGER"));
-
-
-	BoxTrigger->SetCollisionProfileName("NoCollision");
-
+	
 	
 }
 
@@ -42,14 +38,14 @@ void AWeaponBase::Tick(float DeltaTime)
 
 void AWeaponBase::PickedBy(AActor * OtherActor)
 {
-	OwnerActor = OtherActor;
+	OwnerCharactor = OtherActor;
 
-	BoxTrigger->SetCollisionProfileName("NoCollision");
+	GetCapsuleComponent()->SetCollisionProfileName("NoCollision");
 }
 
 void AWeaponBase::DropWeapon()
 {
-	OwnerActor.Reset();
+	OwnerCharactor.Reset();
 }
 
 //void AWeaponBase::SaveGame(UGameProgressSave * SaveInstance)
