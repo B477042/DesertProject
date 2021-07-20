@@ -35,33 +35,15 @@ AGunsBase::AGunsBase()
 	{
 		GetMesh()->SetAnimClass(ANIM_GUN.Class);
 	}
-	/*
-	 *	Set Anim Montages
-	 * 
-	 */
-	static ConstructorHelpers::FObjectFinder<UAnimMontage>MON_Fire(TEXT("AnimMontage'/Game/M4A4_Animated/Gun/Gun_Animations/Gun_Fire_Montage.Gun_Fire_Montage'"));
-	if (MON_Fire.Succeeded())
-	{
-		Montage_Fire = MON_Fire.Object;
-	}
-	static ConstructorHelpers::FObjectFinder<UAnimMontage>Mon_Reload(TEXT("AnimMontage'/Game/M4A4_Animated/Gun/Gun_Animations/Gun_Reload_Montage.Gun_Reload_Montage'"));
-	if (Mon_Reload.Succeeded())
-	{
-		Montage_Reload = Mon_Reload.Object;
-	}
-	static ConstructorHelpers::FObjectFinder<UAnimMontage>Mon_Melee(TEXT("AnimMontage'/Game/M4A4_Animated/Gun/Gun_Animations/Gun_Melee_Attack_Montage.Gun_Melee_Attack_Montage'"));
-	if (Mon_Melee.Succeeded())
-	{
-		Montage_Melee = Mon_Melee.Object;
-	}
+	
 	
 	/*=====================================================================================================
 	 * Attach Particle System
 	 */
-	PS_Eject->AttachTo(GetMesh());
-	PS_Muzzle->AttachTo(GetMesh());
-	PS_Eject->SetRelativeLocation(FVector(0, 12.0f, 7.0f));
-	PS_Muzzle->SetRelativeLocation(FVector(0, 53, 7));
+	PS_Eject->AttachToComponent(GetMesh(),FAttachmentTransformRules::KeepRelativeTransform,Name_BulletEject);
+	PS_Muzzle->AttachToComponent(GetMesh(),FAttachmentTransformRules::KeepRelativeTransform,Name_Muzzle);
+	/*PS_Eject->SetRelativeLocation(FVector(0, 12.0f, 7.0f));
+	PS_Muzzle->SetRelativeLocation(FVector(0, 53, 7));*/
 	
 }
 
@@ -74,7 +56,7 @@ void AGunsBase::BeginPlay()
 void AGunsBase::PostInitializeComponents()
 {
 	Super::PostInitializeComponents();
-
+	Anim = Cast<UGunAnimInstance>(GetMesh()->GetAnimInstance());
 }
 
 void AGunsBase::Tick(float DeltaTime)
@@ -86,6 +68,7 @@ void AGunsBase::Fire()
 {
 	//If SaftyMode return
 	if (GunStateComponent->IsSetSafty())return;
+
 
 
 }

@@ -36,11 +36,7 @@ public:
 
 	void DropWeapon();
 
-
-
-	
-
-
+	 
 
 
 protected:
@@ -48,9 +44,6 @@ protected:
 	//UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Info", meta = (AllowPrivateAccess = "true", DisplayName = "Owner Actor"))
 		TSoftObjectPtr<ACharacter> OwnerCharactor;
 	
-
-
-
-
+		 
 	
 };

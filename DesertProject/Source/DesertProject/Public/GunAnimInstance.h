@@ -20,9 +20,18 @@ protected:
 	virtual void NativeUpdateAnimation(float DeltaSeconds) override;
 public:
 
-
-
+	
+protected:
+	UFUNCTION()
+		void AnimNotify_MuzzleFlash();
+public:
 
 protected:
-
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Montage", meta = (AllowPrivateAccess = true))
+		UAnimMontage* Montage_Fire;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Montage", meta = (AllowPrivateAccess = true))
+		UAnimMontage* Montage_Reload;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Montage", meta = (AllowPrivateAccess = true))
+		UAnimMontage* Montage_Melee;
+	
 };

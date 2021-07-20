@@ -12,7 +12,8 @@ AWeaponBase::AWeaponBase()
 	PrimaryActorTick.bCanEverTick = false;
 	
 
-	
+	GetCapsuleComponent()->SetCapsuleRadius(1.0f);
+	GetCapsuleComponent()->SetCapsuleHalfHeight(1.0f);
 	
 }
 
@@ -48,13 +49,3 @@ void AWeaponBase::DropWeapon()
 	OwnerCharactor.Reset();
 }
 
-//void AWeaponBase::SaveGame(UGameProgressSave * SaveInstance)
-//{
-//	if (!SaveInstance)return;
-//}
-//
-//void AWeaponBase::LoadGame(UGameProgressSave * LoadInstance)
-//{
-//	if (!LoadInstance)return;
-//}
-//

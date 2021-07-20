@@ -43,12 +43,7 @@ protected:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Info", meta = (AllowPrivateAccess = true))
 		UGunStateComponent* GunStateComponent;
 	
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Montage", meta = (AllowPrivateAccess = true))
-		UAnimMontage* Montage_Fire;
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Montage", meta = (AllowPrivateAccess = true))
-		UAnimMontage* Montage_Reload;
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Montage", meta = (AllowPrivateAccess = true))
-		UAnimMontage* Montage_Melee;
+	
 
 	//Muzzle Flash
 	UPROPERTY(VisibleInstanceOnly, Category = "Particle System")
@@ -56,4 +51,8 @@ protected:
 	//Bullet Ejcet Effect
 	UPROPERTY(VisibleInstanceOnly, Category = "Particle System")
 		UParticleSystemComponent* PS_Eject;
+
+	//Anim Instance Pointer
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, meta = (AllowPrivateAccess = true))
+		class UGunAnimInstance* Anim;
 };
