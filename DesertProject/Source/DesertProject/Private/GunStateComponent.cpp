@@ -9,7 +9,7 @@ UGunStateComponent::UGunStateComponent()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = false;
-	FireMode = FFireMode::Safty;
+	
 	// ...
 }
 
@@ -23,9 +23,16 @@ void UGunStateComponent::BeginPlay()
 	
 }
 
-bool UGunStateComponent::IsSetSafty()
+
+
+bool UGunStateComponent::IsCountEmpty()
 {
-	return (FireMode == FFireMode::Safty) ? true : false;
+	return AmmoCount <= 0 ? true : false;
+}
+
+void UGunStateComponent::ToggleFireMode()
+{
+	
 }
 
 

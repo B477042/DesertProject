@@ -8,7 +8,7 @@
 
 AGunsBase::AGunsBase()
 {
-	GunStateComponent = CreateDefaultSubobject<UGunStateComponent>(TEXT("GUNSTATECOMPNENT"));
+	GunStateComponent = CreateDefaultSubobject<UGunStateComponent>(TEXT("GunStateComponent"));
 	PS_Muzzle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("PSMUZZLE"));
 	PS_Eject = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("PSEJCT"));
 	
@@ -57,6 +57,27 @@ void AGunsBase::PostInitializeComponents()
 {
 	Super::PostInitializeComponents();
 	Anim = Cast<UGunAnimInstance>(GetMesh()->GetAnimInstance());
+
+	/*
+	 * Bind Particle Play
+	 */
+	Anim->OnMuzzleFlash.BindLambda([this]()->void
+	{
+		if(PS_Muzzle->IsActive())
+		{
+			PS_Muzzle->Deactivate();
+		}
+		PS_Muzzle->Activate();
+	});
+
+	Anim->OnEjectBullet.BindLambda([this]()->void
+	{
+		if (PS_Eject->IsActive())
+		{
+			PS_Eject->Deactivate();
+		}
+		PS_Eject->Activate();
+	});
 }
 
 void AGunsBase::Tick(float DeltaTime)
@@ -69,6 +90,22 @@ void AGunsBase::Fire()
 	//If SaftyMode return
 	if (GunStateComponent->IsSetSafty())return;
 
+	
+	Anim->PlayMontage(EGunMontageToPlay::E_Fire);
 
+	
+}
 
+void AGunsBase::ToggleFireMode()
+{
+	
+}
+
+bool AGunsBase::CheckAmmo()
+{
+	if(GunStateComponent->IsCountEmpty())
+	{
+		return false;
+	}
+	return true;
 }

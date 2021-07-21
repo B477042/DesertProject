@@ -28,8 +28,14 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	void Fire();
 	class UGunStateComponent* GetGunStateComponent()const { return  GunStateComponent; }
-
-
+	void ToggleFireMode();
+protected:
+	/*
+	 * Check Ammo is  to fire enough to fire
+	 * If Ammo is not enough to fire, return false
+	 */
+	bool CheckAmmo();
+	
 protected:
 	//Skeletal Socket Names
 	const FName Name_Muzzle = "Muzzle";
@@ -43,8 +49,6 @@ protected:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Info", meta = (AllowPrivateAccess = true))
 		UGunStateComponent* GunStateComponent;
 	
-	
-
 	//Muzzle Flash
 	UPROPERTY(VisibleInstanceOnly, Category = "Particle System")
 		UParticleSystemComponent* PS_Muzzle;
@@ -55,4 +59,6 @@ protected:
 	//Anim Instance Pointer
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, meta = (AllowPrivateAccess = true))
 		class UGunAnimInstance* Anim;
+
+	
 };

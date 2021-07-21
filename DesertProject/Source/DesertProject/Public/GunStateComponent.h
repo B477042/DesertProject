@@ -14,8 +14,8 @@
 UENUM(BlueprintType)
 enum class FFireMode : uint8
 {
-	Safty,
-	SemiAuto,
+	
+	SemiAuto=0,
 	FullAuto,
 	Burst
 };
@@ -35,15 +35,18 @@ protected:
 
 public:	
 	
-	//Before Fire, Check Fire Mode. if Fire mode is Safty return true. else return false
-	bool IsSetSafty();
+
 	
 	FFireMode GetFireMode() { return FireMode; }
 
-
-
+	bool IsCountEmpty();
+	void ToggleFireMode();
 protected:
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "FireMode", meta = (AllowPrivateAccess = true))
-		FFireMode FireMode;
-
+		FFireMode FireMode=FFireMode::FullAuto;
+	//Display Current Ammo Count
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Ammo", meta = (AllowPrivateAccess = true, ToolTip = "Display Current Ammo Count", UIMax = 100.00, UIMin = 0.00))
+		uint8 AmmoCount=30;
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Ammo", meta = (AllowPrivateAccess = true, UIMax = 100.00, UIMin = 0.00))
+		uint8 MaximumAmmo=30;
 };

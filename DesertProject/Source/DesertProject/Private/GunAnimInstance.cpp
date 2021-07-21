@@ -36,7 +36,36 @@ void UGunAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 	Super::NativeUpdateAnimation(DeltaSeconds);
 }
 
+void UGunAnimInstance::PlayMontage(EGunMontageToPlay Mode)
+{
+	//If is Any Montage Play. return
+	if(Montage_IsPlaying(nullptr))
+	{
+		return;
+	}
+	
+	switch(Mode)
+	{
+	case EGunMontageToPlay::E_Fire:
+		Montage_Play(Montage_Fire);
+		break;
+	case EGunMontageToPlay::E_Reload:
+		Montage_Play(Montage_Reload);
+		break;
+	case EGunMontageToPlay::E_Melee:
+		Montage_Play(Montage_Melee);
+		break;
+	default:
+		break;
+	}
+}
+
 void UGunAnimInstance::AnimNotify_MuzzleFlash()
 {
+	OnMuzzleFlash.Execute();
+}
 
+void UGunAnimInstance::AnimNotify_EjectBullet()
+{
+	OnEjectBullet.Execute();
 }
