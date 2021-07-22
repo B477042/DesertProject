@@ -9,17 +9,17 @@ UGunAnimInstance::UGunAnimInstance()
 	 *	Set Anim Montages
 	 *
 	 */
-	static ConstructorHelpers::FObjectFinder<UAnimMontage>MON_Fire(TEXT("AnimMontage'/Game/M4A4_Animated/Gun/Gun_Animations/Gun_Fire_Montage.Gun_Fire_Montage'"));
+	static ConstructorHelpers::FObjectFinder<UAnimMontage>MON_Fire(TEXT("AnimMontage'/Game/MyFolder/Animation/Montage/Gun/Gun_Fire_Montage.Gun_Fire_Montage'"));
 	if (MON_Fire.Succeeded())
 	{
 		Montage_Fire = MON_Fire.Object;
 	}
-	static ConstructorHelpers::FObjectFinder<UAnimMontage>Mon_Reload(TEXT("AnimMontage'/Game/M4A4_Animated/Gun/Gun_Animations/Gun_Reload_Montage.Gun_Reload_Montage'"));
+	static ConstructorHelpers::FObjectFinder<UAnimMontage>Mon_Reload(TEXT("AnimMontage'/Game/MyFolder/Animation/Montage/Gun/Gun_Reload_Montage.Gun_Reload_Montage'"));
 	if (Mon_Reload.Succeeded())
 	{
 		Montage_Reload = Mon_Reload.Object;
 	}
-	static ConstructorHelpers::FObjectFinder<UAnimMontage>Mon_Melee(TEXT("AnimMontage'/Game/M4A4_Animated/Gun/Gun_Animations/Gun_Melee_Attack_Montage.Gun_Melee_Attack_Montage'"));
+	static ConstructorHelpers::FObjectFinder<UAnimMontage>Mon_Melee(TEXT("AnimMontage'/Game/MyFolder/Animation/Montage/Gun/Gun_Melee_Attack_Montage.Gun_Melee_Attack_Montage'"));
 	if (Mon_Melee.Succeeded())
 	{
 		Montage_Melee = Mon_Melee.Object;
@@ -38,7 +38,7 @@ void UGunAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 
 void UGunAnimInstance::PlayMontage(EGunMontageToPlay Mode)
 {
-	//If is Any Montage Play. return
+	//If is Any Montage Play. Return
 	if(Montage_IsPlaying(nullptr))
 	{
 		return;

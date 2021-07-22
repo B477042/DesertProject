@@ -6,7 +6,7 @@
 
 #include "GameFramework/Character.h"
 
-//#include ""
+
 #include "WeaponBase.generated.h"
 
 
@@ -27,7 +27,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	virtual void PostInitializeComponents() override;
-
+	
+	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -36,14 +37,20 @@ public:
 
 	void DropWeapon();
 
-	 
 
+	
 
 protected:
-	//Actor which owning this Weapon
-	//UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Info", meta = (AllowPrivateAccess = "true", DisplayName = "Owner Actor"))
-		TSoftObjectPtr<ACharacter> OwnerCharactor;
+	UFUNCTION()
+		void OnCharacterOverlapped(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+		
+
+
+
 	
-		 
+	TSoftObjectPtr<ACharacter> OwnerCharactor;
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Collision", meta = (AllowPrivateAccess = true))
+	class UBoxComponent* PickUpTrigger;
 	
 };

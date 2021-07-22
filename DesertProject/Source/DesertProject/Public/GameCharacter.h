@@ -9,7 +9,7 @@
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "GameFramework/PawnMovementComponent.h"
 #include "GameProgressSave.h"
-
+#include "WeaponBase.h"
 
 #include "GameCharacter.generated.h"
 
@@ -59,20 +59,18 @@ public:
 
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)override;
 
+	void SetWeapon(class AWeaponBase* NewWeapon);
 
 
-public:
 	FOnHPChanged OnHPChanged;
 protected:
-
+	const FName Name_Weapon = "GunPoint";
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "AI")
 		UAIPerceptionStimuliSourceComponent* AIPerceptionStimuliSource;
 	//Default Value : 100.0f
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Stats")
 		float HP;
-	//The WeakObejctPtr arrangement of the Weapons the character has.
-	/*UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Weapons", meta = (AllowPrivateAccess = "true"))
-	TArray<TWeakObjectPtr<class AWeaponBase>>Weapons;*/
-
+	UPROPERTY(VisibleAnywhere, Category = "Weapon")
+		TWeakObjectPtr<class AWeaponBase> Weapon;
 
 };

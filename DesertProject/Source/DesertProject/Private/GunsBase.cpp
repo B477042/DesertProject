@@ -40,10 +40,9 @@ AGunsBase::AGunsBase()
 	/*=====================================================================================================
 	 * Attach Particle System
 	 */
-	PS_Eject->AttachToComponent(GetMesh(),FAttachmentTransformRules::KeepRelativeTransform,Name_BulletEject);
-	PS_Muzzle->AttachToComponent(GetMesh(),FAttachmentTransformRules::KeepRelativeTransform,Name_Muzzle);
-	/*PS_Eject->SetRelativeLocation(FVector(0, 12.0f, 7.0f));
-	PS_Muzzle->SetRelativeLocation(FVector(0, 53, 7));*/
+	PS_Eject->AttachToComponent(GetMesh(),FAttachmentTransformRules::SnapToTargetNotIncludingScale,Name_BulletEject);
+	PS_Muzzle->AttachToComponent(GetMesh(),FAttachmentTransformRules::SnapToTargetNotIncludingScale,Name_Muzzle);
+
 	
 }
 
@@ -87,10 +86,6 @@ void AGunsBase::Tick(float DeltaTime)
 
 void AGunsBase::Fire()
 {
-	//If SaftyMode return
-	if (GunStateComponent->IsSetSafty())return;
-
-	
 	Anim->PlayMontage(EGunMontageToPlay::E_Fire);
 
 	

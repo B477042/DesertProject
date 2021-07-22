@@ -10,7 +10,8 @@ AGameCharacter::AGameCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 
 	HP = 100.0f;
-
+	AIPerceptionStimuliSource = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("AIPerceptionStimuliSource"));
+	
 }
 
 // Called when the game starts or when spawned
@@ -63,5 +64,11 @@ float AGameCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damage
 	OnHPChanged.Broadcast(HP);
 
 	return DamageAmount;
+}
+
+void AGameCharacter::SetWeapon(AWeaponBase* NewWeapon)
+{
+	NewWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, Name_Weapon);
+	Weapon = NewWeapon;
 }
 

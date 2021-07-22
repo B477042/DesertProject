@@ -3,7 +3,7 @@
 
 #include "PlayerCharacter.h"
 #include "Engine/EngineTypes.h"
-#include "..\Public\PlayerCharacter.h"
+#include "Components/CapsuleComponent.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -12,6 +12,8 @@ APlayerCharacter::APlayerCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 	loadAsset();
 	bAutoFireMode = false;
+	Tags.Add(TEXT("Player"));
+	GetCapsuleComponent()->SetCollisionProfileName(TEXT("Player"));
 	
 }
 
