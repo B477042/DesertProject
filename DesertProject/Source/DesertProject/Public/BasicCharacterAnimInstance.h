@@ -25,24 +25,24 @@ protected:
 public:
 
 	void SetCrouch(bool bSet) {bIsCrouch = bSet;}
-	void SetIronsights(bool bSet){ bOnIronsights = bSet; }
+	void SetIronsights(bool bSet){ bOnADS = bSet; }
 	void SetAttacking(bool bSet){ bIsAttacking = bSet; }
 	void SetAccelerating(bool bSet){ bIsAccelerating = bSet; }
 
 protected:
 	//
-	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = "true"))
-		uint8 bIsInAir;
-	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = "true"))
-		uint8 bIsAccelerating;
-	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = "true"))
-		uint8 bIsFullBody;
-	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = "true"))
-		uint8 bIsAttacking;
-	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = "true"))
-		uint8 bIsCrouch;
-	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = "true"))
-		uint8 bOnIronsights;
+	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = true, DisplayName = "Is in Air"))
+		uint8 bIsInAir : 1;
+	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = true, DisplayName = "Is Accelerating"))
+		uint8 bIsAccelerating :1;
+	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = true, DisplayName = "Is Full Body"))
+		uint8 bIsFullBody :1;
+	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = true, DisplayName = "Is Attacking"))
+		uint8 bIsAttacking :1;
+	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = true, DisplayName = "Is Crouch"))
+		uint8 bIsCrouch :1;
+	UPROPERTY(BlueprintReadOnly, Category = "variable", meta = (AllowPrivateAccess = true, DisplayName = "On ADS"))
+		uint8 bOnADS:1;
 
 
 

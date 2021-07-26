@@ -54,7 +54,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	//Action Input Bind
 	PlayerInputComponent->BindAction(TEXT("PullTheTrigger"), EInputEvent::IE_Pressed, this, &APlayerCharacter::PullTrigger);
 	PlayerInputComponent->BindAction(TEXT("PullTheTrigger"), EInputEvent::IE_Released, this, &APlayerCharacter::ReleaseTrigger);
-	//PlayerInputComponent->BindAction(TEXT("PullTheTrigger"), EInputEvent::IE_, this, &APlayerCharacter::PullTheTrigger);
+	
 	PlayerInputComponent->BindAction(TEXT("AimDownSight"), EInputEvent::IE_Pressed, this, &APlayerCharacter::AimDownSight);
 
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &APlayerCharacter::Jump);
@@ -82,7 +82,9 @@ void APlayerCharacter::loadAsset()
 		
 	}
 
-
+	/*
+	 *  Set AnimInstance
+	 */
 	
 }
 
@@ -109,7 +111,7 @@ void APlayerCharacter::LookVertical(float NewAxisValue)
 void APlayerCharacter::PullTrigger()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Fire"));
-	//(bAutoFireMode) ? bAutoFireMode = false : bAutoFireMode = true;
+	
 }
 void APlayerCharacter::ReleaseTrigger()
 {

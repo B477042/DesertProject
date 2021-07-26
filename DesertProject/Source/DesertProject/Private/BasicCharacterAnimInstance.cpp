@@ -12,7 +12,7 @@ UBasicCharacterAnimInstance::UBasicCharacterAnimInstance()
 	bIsFullBody = false;
 	bIsAttacking = false;
 	bIsCrouch = false;
-	bOnIronsights = false;
+	bOnADS = false;
 	Speed = 0.f;
 	Direction = 0.0f;
 
