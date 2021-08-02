@@ -4,6 +4,7 @@
 #include "PlayerCharacter.h"
 #include "Engine/EngineTypes.h"
 #include "Components/CapsuleComponent.h"
+#include "FPSCharacterAnimInstance.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -85,7 +86,11 @@ void APlayerCharacter::loadAsset()
 	/*
 	 *  Set AnimInstance
 	 */
-	
+	static ConstructorHelpers::FClassFinder<UFPSCharacterAnimInstance>ANIM(TEXT("AnimBlueprint'/Game/MyFolder/Animation/AnimInstance/AnimInstance_PlayerArm.AnimInstance_PlayerArm_C'"));
+	if (ANIM.Succeeded())
+	{
+		GetMesh()->SetAnimClass(ANIM.Class);
+	}
 }
 
 void APlayerCharacter::MoveForward(float NewAxisValue)
