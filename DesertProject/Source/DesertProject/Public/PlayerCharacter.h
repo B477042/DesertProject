@@ -50,9 +50,10 @@ protected:
 	void Jump();
 
 protected:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Camera", meta = (AllowPrivateAccess = true))
 		UCameraComponent* MainCamera;
-
+	/*UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "MainCamera", meta = (AllowPrivateAccess = true))
+		USpringArmComponent* MainSpringArm;*/
 	UPROPERTY(VisibleAnywhere, Category = "Attack")
 	uint8 bAutoFireMode;
 
