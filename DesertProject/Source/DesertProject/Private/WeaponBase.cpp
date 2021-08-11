@@ -48,7 +48,8 @@ void AWeaponBase::PickedBy(AActor * OtherActor)
 	OwnerCharactor = OtherActor;
 
 	GetCapsuleComponent()->SetCollisionProfileName("NoCollision");
-
+	GetMesh()->SetCollisionProfileName("NoCollision");
+	
 	
 	
 }

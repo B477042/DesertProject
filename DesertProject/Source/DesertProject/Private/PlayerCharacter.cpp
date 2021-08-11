@@ -5,6 +5,7 @@
 #include "Engine/EngineTypes.h"
 #include "Components/CapsuleComponent.h"
 #include "FPSCharacterAnimInstance.h"
+#include "WeaponBase.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -16,6 +17,10 @@ APlayerCharacter::APlayerCharacter()
 	bAutoFireMode = false;
 	Tags.Add(TEXT("Player"));
 	GetCapsuleComponent()->SetCollisionProfileName(TEXT("Player"));
+
+	//Camera Settings
+	float X, Y, Z;
+	MainCamera->SetRelativeLocation(FVector(X = -29.000000, Y = 2.000000, Z = 73.000000));
 	
 }
 
@@ -29,7 +34,13 @@ void APlayerCharacter::BeginPlay()
 void APlayerCharacter::PostInitializeComponents()
 {
 	Super::PostInitializeComponents();
+	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this , &APlayerCharacter::OnCapsuleCompBeginOverlap);
+}
 
+void APlayerCharacter::OnCapsuleCompBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	PickUpWeapon(OtherActor);
 }
 
 // Called every frame
@@ -60,6 +71,26 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAction(TEXT("AimDownSight"), EInputEvent::IE_Pressed, this, &APlayerCharacter::AimDownSight);
 
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &APlayerCharacter::Jump);
+}
+
+void APlayerCharacter::PickUpWeapon(AActor* OtherActor)
+{
+	if (!OtherActor)
+	{
+		UE_LOG(LogTemp, Log, TEXT("nullptr"));
+		return;
+	}
+
+	auto WeaponItem = Cast<AWeaponBase>(OtherActor);
+	if (!WeaponItem)
+	{
+		UE_LOG(LogTemp, Log, TEXT("Casting Failed"));
+		return;
+	}
+
+	//Attach Weapon to character
+	AttachWeapon(WeaponItem);
+
 }
 
 void APlayerCharacter::initComponents()
@@ -133,5 +164,30 @@ void APlayerCharacter::Jump()
 {
 	Super::Jump();
 	UE_LOG(LogTemp, Warning, TEXT("Jump"));
+}
+
+void APlayerCharacter::AttachWeapon(AWeaponBase* NewWeapon)
+{
+	if (!NewWeapon)
+	{
+		UE_LOG(LogTemp, Log, TEXT("Nullptr"));
+		return;
+	}
+
+	//Weapon Inventory Check
+	//Implement later
+
+
+
+	NewWeapon->PickedBy(this);
+	//Attach Weapon
+	NewWeapon->AttachToComponent(GetMesh() , FAttachmentTransformRules::SnapToTargetNotIncludingScale, Name_GripPoint);
+	//Rotate and re-positioning Weapon Actor
+	NewWeapon->SetActorRelativeLocation(FVector(0.0f,0.0,-1.9f));
+	NewWeapon->SetActorRelativeRotation(FRotator(0.0f,90.0f,0.0f));
+
+
+
+	UE_LOG(LogTemp, Error, TEXT("Attach!"));
 }
 
